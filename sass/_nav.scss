@@ -1,0 +1,55 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(37rem, max-content));
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 20rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-content: center;
+    grid-column-gap: 4rem;
+  }
+  h2 {
+    margin-right: 4rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1rem, max-content));
+    align-items: center;
+    grid-column-gap: 4rem;
+
+    list-style: none;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #222222;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    grid-column-gap: 4rem;
+  }
+}
+
+.phone {
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 140%;
+    color: #222;
+  }
+}

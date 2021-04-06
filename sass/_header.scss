@@ -1,0 +1,16 @@
+.header {
+  display: grid;
+
+  justify-items: center;
+  align-content: center;
+  grid-row-gap: 4rem;
+
+  height: 79rem;
+  background-image: url(/img/image78.jpg);
+  background-size: cover;
+
+  .heading-2 {
+    width: 55rem;
+    text-align: center;
+  }
+}

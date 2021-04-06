@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+// COLORS
+$color-white: #fff;
+$color-black: #000000;
+$color-text: #222222;
+$color-grey-dark: #333333;
+$color-grey-light: #bdbdbd;
+$color-grey-medium: #707070;
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Light.woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Medium.woff");
+  font-weight: 500;
+  font-size: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-MediumItalic.woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%; // 10px / 16px = 62.5%
+  font-family: "SF Pro Display";
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(11, min-content);
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 140%;
+  font-family: inherit;
+  border: 1px solid $color-grey-dark;
+  &--black {
+    background-color: $color-grey-dark;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-black;
+      border-color: $color-black;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-text;
+
+    &:hover {
+      background-color: $color-grey-dark;
+      color: $color-white;
+    }
+  }
+}

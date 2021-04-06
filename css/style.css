@@ -1,0 +1,139 @@
+.heading-1 {
+  font-size: 9.6rem;
+  line-height: 11.5rem;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase; }
+
+.heading-2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #000;
+  line-height: 120%;
+  letter-spacing: 0.1rem; }
+  .heading-2--light {
+    text-transform: none;
+    color: #fff;
+    font-weight: 200; }
+  .heading-2--bold {
+    font-weight: 700; }
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(37rem, max-content));
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 20rem; }
+  .nav__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-content: center;
+    grid-column-gap: 4rem; }
+  .nav h2 {
+    margin-right: 4rem; }
+  .nav__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1rem, max-content));
+    align-items: center;
+    grid-column-gap: 4rem;
+    list-style: none; }
+  .nav__item {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 140%; }
+  .nav__link {
+    text-decoration: none;
+    color: #222222; }
+  .nav__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    grid-column-gap: 4rem; }
+
+.phone a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 140%;
+  color: #222; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Light.woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Medium.woff");
+  font-weight: 500;
+  font-size: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-MediumItalic.woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Bold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+html {
+  font-size: 62.5%;
+  font-family: "SF Pro Display"; }
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(11, min-content); }
+
+.btn {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 140%;
+  font-family: inherit;
+  border: 1px solid #333333; }
+  .btn--black {
+    background-color: #333333;
+    color: #fff; }
+    .btn--black:hover {
+      background-color: #000000;
+      border-color: #000000; }
+  .btn--white {
+    background-color: #fff;
+    color: #222222; }
+    .btn--white:hover {
+      background-color: #333333;
+      color: #fff; }
+
+.header {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-row-gap: 4rem;
+  height: 79rem;
+  background-image: url(/img/image78.jpg);
+  background-size: cover; }
+  .header .heading-2 {
+    width: 55rem;
+    text-align: center; }

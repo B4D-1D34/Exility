@@ -1,0 +1,27 @@
+.heading-1 {
+  font-size: 9.6rem;
+  line-height: 11.5rem;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #000;
+  line-height: 120%;
+  letter-spacing: 0.1rem;
+
+  &--light {
+    text-transform: none;
+    color: #fff;
+    font-weight: 200;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
