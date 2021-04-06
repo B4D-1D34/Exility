@@ -18,7 +18,14 @@
     color: #fff;
     font-weight: 200; }
   .heading-2--bold {
+    text-transform: none;
     font-weight: 700; }
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: #222;
+  line-height: 125%; }
 
 .nav {
   display: grid;
@@ -41,7 +48,7 @@
     list-style: none; }
   .nav__item {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 140%; }
   .nav__link {
     text-decoration: none;
@@ -132,8 +139,40 @@ html {
   align-content: center;
   grid-row-gap: 4rem;
   height: 79rem;
-  background-image: url(/img/image78.jpg);
+  background-image: url(/img/image781.jpg);
   background-size: cover; }
   .header .heading-2 {
     width: 55rem;
     text-align: center; }
+
+.description {
+  padding: 20rem;
+  padding-bottom: 10rem; }
+  .description__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .description__par {
+    width: 60rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 150%;
+    color: #222; }
+    .description__par--narrow {
+      max-width: 52rem;
+      margin-right: 8rem; }
+
+.head__wrapper {
+  display: block;
+  margin-bottom: 8rem; }
+
+.u-paragraph-margin {
+  margin-bottom: 1.2rem; }
+
+.u-margin-small-b {
+  margin-bottom: 1rem; }
+
+.u-margin-largest-b {
+  margin-bottom: 20rem; }
+
+.map__map {
+  width: 100%; }
