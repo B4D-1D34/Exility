@@ -9,19 +9,9 @@
 
   &__par {
     width: 60rem;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 150%;
-    color: #222;
-
     &--narrow {
       max-width: 52rem;
       margin-right: 8rem;
     }
   }
-}
-
-.head__wrapper {
-  display: block;
-  margin-bottom: 8rem;
 }

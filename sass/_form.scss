@@ -1,0 +1,65 @@
+.form {
+  padding: 10rem 0 8rem;
+  background-color: $color-grey-dark;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .heading-2 {
+    color: $color-white;
+  }
+
+  &__input {
+    margin-bottom: 2rem;
+    line-height: 110%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid $color-grey-medium;
+    width: 100%;
+    padding: 2rem 3rem;
+    display: block;
+    color: $color-white;
+
+    &::placeholder {
+      color: $color-grey-light;
+    }
+
+    &:hover {
+      border-color: $color-grey-light;
+    }
+
+    &:focus {
+      border-color: $color-white;
+      outline: none;
+    }
+
+    &:invalid {
+      border-color: #f34c4c;
+    }
+  }
+
+  &__textarea {
+    height: 12rem;
+    resize: none;
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 120%;
+    color: $color-grey-light;
+  }
+
+  .btn--white {
+    padding: 2rem 7rem;
+    &:hover {
+      background-color: $color-grey-light;
+      color: $color-text;
+    }
+  }
+}

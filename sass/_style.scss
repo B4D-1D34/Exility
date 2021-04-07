@@ -1,0 +1,17 @@
+.style {
+  display: flex;
+  align-items: center;
+  padding-right: 20rem;
+  justify-content: space-between;
+
+  &__img {
+    margin-right: 8rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    max-width: 60rem;
+  }
+}

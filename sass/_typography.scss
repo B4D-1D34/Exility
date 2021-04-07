@@ -4,7 +4,7 @@
     line-height: 11.5rem;
     letter-spacing: 1rem;
     font-weight: 400;
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
   }
 
@@ -12,13 +12,13 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 4rem;
-    color: #000;
+    color: $color-black;
     line-height: 120%;
     letter-spacing: 0.1rem;
 
     &--light {
       text-transform: none;
-      color: #fff;
+      color: $color-white;
       font-weight: 200;
     }
 
@@ -31,7 +31,19 @@
   &-3 {
     font-weight: 400;
     font-size: 2.8rem;
-    color: #222;
+    color: $color-text;
     line-height: 125%;
+  }
+}
+.paragraph,
+input,
+textarea {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: $color-text;
+
+  &--bold {
+    font-weight: 700;
   }
 }

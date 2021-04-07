@@ -1,0 +1,17 @@
+.comfort-zone {
+  padding-left: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__img {
+    margin-left: 8rem;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    max-width: 60rem;
+  }
+}

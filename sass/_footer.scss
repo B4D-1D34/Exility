@@ -1,0 +1,53 @@
+.footer {
+  padding: 6rem 20rem 4rem;
+  background-color: $color-text;
+  display: flex;
+  justify-content: space-between;
+  color: $color-white;
+
+  &__copy {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 120%;
+  }
+
+  &__nav__wrapper {
+    width: 68rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+
+    column-gap: 6rem;
+    row-gap: 2rem;
+
+    &__link {
+      text-decoration: none;
+      color: $color-white;
+    }
+  }
+
+  &__contacts {
+    width: 21.7rem;
+  }
+
+  &__heading__wrapper {
+    height: 18.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .heading-2,
+  .heading-3 {
+    color: $color-white;
+  }
+
+  .heading-3 {
+    margin-bottom: 3rem;
+  }
+}

@@ -47,6 +47,11 @@ $color-grey-medium: #707070;
 
 html {
   font-size: 62.5%; // 10px / 16px = 62.5%
+}
+
+body,
+input,
+textarea {
   font-family: "SF Pro Display";
 }
 
@@ -63,6 +68,10 @@ html {
   line-height: 140%;
   font-family: inherit;
   border: 1px solid $color-grey-dark;
+
+  &:focus {
+    outline: none;
+  }
   &--black {
     background-color: $color-grey-dark;
     color: $color-white;

@@ -1,3 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Light.woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Medium.woff");
+  font-weight: 500;
+  font-size: normal; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-MediumItalic.woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SFProDisplay-Bold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+html {
+  font-size: 62.5%; }
+
+body,
+input,
+textarea {
+  font-family: "SF Pro Display"; }
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(11, min-content); }
+
+.btn {
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 140%;
+  font-family: inherit;
+  border: 1px solid #333333; }
+  .btn:focus {
+    outline: none; }
+  .btn--black {
+    background-color: #333333;
+    color: #fff; }
+    .btn--black:hover {
+      background-color: #000000;
+      border-color: #000000; }
+  .btn--white {
+    background-color: #fff;
+    color: #222222; }
+    .btn--white:hover {
+      background-color: #333333;
+      color: #fff; }
+
 .heading-1 {
   font-size: 9.6rem;
   line-height: 11.5rem;
@@ -10,7 +82,7 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4rem;
-  color: #000;
+  color: #000000;
   line-height: 120%;
   letter-spacing: 0.1rem; }
   .heading-2--light {
@@ -24,8 +96,20 @@
 .heading-3 {
   font-weight: 400;
   font-size: 2.8rem;
-  color: #222;
+  color: #222222;
   line-height: 125%; }
+
+.paragraph,
+input,
+textarea {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #222222; }
+  .paragraph--bold,
+  input--bold,
+  textarea--bold {
+    font-weight: 700; }
 
 .nav {
   display: grid;
@@ -67,72 +151,6 @@
   line-height: 140%;
   color: #222; }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0; }
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Light.woff");
-  font-weight: 200;
-  font-style: normal; }
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Regular.woff");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Medium.woff");
-  font-weight: 500;
-  font-size: normal; }
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-MediumItalic.woff");
-  font-weight: 500;
-  font-style: italic; }
-
-@font-face {
-  font-family: "SF Pro Display";
-  src: url("/fonts/SFProDisplay-Bold.woff");
-  font-weight: 700;
-  font-style: normal; }
-
-html {
-  font-size: 62.5%;
-  font-family: "SF Pro Display"; }
-
-.container {
-  display: grid;
-  grid-template-rows: repeat(11, min-content); }
-
-.btn {
-  cursor: pointer;
-  padding: 1.5rem 3rem;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 140%;
-  font-family: inherit;
-  border: 1px solid #333333; }
-  .btn--black {
-    background-color: #333333;
-    color: #fff; }
-    .btn--black:hover {
-      background-color: #000000;
-      border-color: #000000; }
-  .btn--white {
-    background-color: #fff;
-    color: #222222; }
-    .btn--white:hover {
-      background-color: #333333;
-      color: #fff; }
-
 .header {
   display: grid;
   justify-items: center;
@@ -152,27 +170,187 @@ html {
     display: flex;
     justify-content: space-between; }
   .description__par {
-    width: 60rem;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 150%;
-    color: #222; }
+    width: 60rem; }
     .description__par--narrow {
       max-width: 52rem;
       margin-right: 8rem; }
 
-.head__wrapper {
-  display: block;
+.u-heading-margin {
   margin-bottom: 8rem; }
 
 .u-paragraph-margin {
   margin-bottom: 1.2rem; }
 
+.u-margin-medium-t {
+  margin-top: 2rem; }
+
 .u-margin-small-b {
   margin-bottom: 1rem; }
+
+.u-margin-big-b {
+  margin-bottom: 4rem; }
 
 .u-margin-largest-b {
   margin-bottom: 20rem; }
 
 .map__map {
   width: 100%; }
+
+.gallery {
+  padding: 20rem; }
+  .gallery__wrapper {
+    margin-bottom: 6rem;
+    display: flex; }
+    .gallery__wrapper--img {
+      margin-right: 4rem;
+      position: relative; }
+    .gallery__wrapper--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 27.55%); }
+  .gallery__caption {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    color: #fff; }
+
+.arr-buttons svg {
+  width: 4.1rem;
+  height: 1.6rem;
+  cursor: pointer;
+  margin-right: 3rem;
+  fill: #bdbdbd; }
+  .arr-buttons svg:hover {
+    fill: #333333; }
+
+.style {
+  display: flex;
+  align-items: center;
+  padding-right: 20rem;
+  justify-content: space-between; }
+  .style__img {
+    margin-right: 8rem; }
+    .style__img img {
+      width: 100%; }
+  .style__text {
+    max-width: 60rem; }
+
+.apartments {
+  padding: 20rem; }
+  .apartments__content-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .apartments__content {
+    width: min-content; }
+  .apartments__link {
+    color: #707070;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 3px; }
+    .apartments__link:hover {
+      color: #222222; }
+
+.comfort-zone {
+  padding-left: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .comfort-zone__img {
+    margin-left: 8rem; }
+    .comfort-zone__img img {
+      width: 100%; }
+  .comfort-zone__text {
+    max-width: 60rem; }
+
+.characteristics {
+  padding: 20rem; }
+  .characteristics__grid {
+    display: grid;
+    column-gap: 9rem;
+    row-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr)); }
+
+.form {
+  padding: 10rem 0 8rem;
+  background-color: #333333; }
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto; }
+  .form .heading-2 {
+    color: #fff; }
+  .form__input {
+    margin-bottom: 2rem;
+    line-height: 110%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #707070;
+    width: 100%;
+    padding: 2rem 3rem;
+    display: block;
+    color: #fff; }
+    .form__input::placeholder {
+      color: #bdbdbd; }
+    .form__input:hover {
+      border-color: #bdbdbd; }
+    .form__input:focus {
+      border-color: #fff;
+      outline: none; }
+    .form__input:invalid {
+      border-color: #f34c4c; }
+  .form__textarea {
+    height: 12rem;
+    resize: none; }
+  .form__text {
+    margin-bottom: 4rem;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 120%;
+    color: #bdbdbd; }
+  .form .btn--white {
+    padding: 2rem 7rem; }
+    .form .btn--white:hover {
+      background-color: #bdbdbd;
+      color: #222222; }
+
+.footer {
+  padding: 6rem 20rem 4rem;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  color: #fff; }
+  .footer__copy {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 120%; }
+  .footer__nav__wrapper {
+    width: 68rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 6rem;
+    row-gap: 2rem; }
+    .footer__nav__link {
+      text-decoration: none;
+      color: #fff; }
+  .footer__contacts {
+    width: 21.7rem; }
+  .footer__heading__wrapper {
+    height: 18.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .footer .heading-2,
+  .footer .heading-3 {
+    color: #fff; }
+  .footer .heading-3 {
+    margin-bottom: 3rem; }

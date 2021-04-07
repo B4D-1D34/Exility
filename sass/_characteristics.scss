@@ -1,0 +1,9 @@
+.characteristics {
+  padding: 20rem;
+  &__grid {
+    display: grid;
+    column-gap: 9rem;
+    row-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  }
+}
