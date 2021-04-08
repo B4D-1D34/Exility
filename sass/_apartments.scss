@@ -1,13 +1,31 @@
 .apartments {
-  padding: 20rem;
+  grid-column: content-left-start / content-right-end;
+  padding: $padding-global 0;
 
-  &__content-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: grid;
+  grid-template-columns: $inner-grid-columns-template;
 
   &__content {
     width: min-content;
+
+    &--1 {
+      grid-column: content-inner-ls/content-inner-le;
+    }
+
+    &--2 {
+      grid-column: content-inner-rs/content-inner-re;
+    }
+  }
+
+  &__img {
+    width: 52rem;
+    height: 60rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__link {

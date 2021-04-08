@@ -1,8 +1,11 @@
 .footer {
-  padding: 6rem 20rem 4rem;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: $inner-grid-columns-template-fullwidth;
+  padding: 6rem 0 4rem;
   background-color: $color-text;
-  display: flex;
-  justify-content: space-between;
+
   color: $color-white;
 
   &__copy {
@@ -11,16 +14,10 @@
     line-height: 120%;
   }
 
-  &__nav__wrapper {
-    width: 68rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
   &__nav {
     display: grid;
     grid-template-columns: repeat(2, max-content);
+    align-self: start;
 
     column-gap: 6rem;
     row-gap: 2rem;
@@ -32,14 +29,15 @@
   }
 
   &__contacts {
-    width: 21.7rem;
+    grid-column: content-inner-rs/middle-inner-r;
+    justify-self: flex-end;
   }
 
   &__heading__wrapper {
+    grid-column: middle-inner-l/content-inner-le;
     height: 18.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    align-content: space-between;
   }
 
   .heading-2,

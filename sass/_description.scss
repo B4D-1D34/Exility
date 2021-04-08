@@ -1,17 +1,25 @@
 .description {
-  padding: 20rem;
-  padding-bottom: 10rem;
+  grid-column: content-left-start / content-right-end;
 
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: $inner-grid-columns-template;
+  padding: $padding-global 0 10rem;
+
+  .head__wrapper {
+    grid-column: content-inner-ls / content-inner-re;
   }
 
   &__par {
-    width: 60rem;
-    &--narrow {
-      max-width: 52rem;
-      margin-right: 8rem;
+    &--1 {
+      grid-column: spacing-inner-rs / content-inner-re;
+    }
+
+    &--2 {
+      grid-column: content-inner-ls / content-inner-le;
+    }
+
+    &--3 {
+      grid-column: spacing-inner-rs / content-inner-re;
     }
   }
 }

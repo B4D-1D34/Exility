@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -31,6 +32,7 @@
           <button class="btn btn--black">Оставить заявку</button>
         </div>
       </nav>
+
       <div class="header">
         <h1 class="heading-1">Exility</h1>
         <h2 class="heading-2 heading-2--light">
@@ -39,53 +41,49 @@
       </div>
 
       <div class="description">
-        <div class="description__wrapper u-margin-largest-b">
-          <h2 class="heading-2 heading-2--bold">Клубный дом EXILITY</h2>
+        <h2 class="heading-2 heading-2--bold">Клубный дом EXILITY</h2>
 
-          <div class="description__par">
-            <p class="paragraph u-paragraph-margin">
-              Вдохновением для дома послужила эстетика американского ар-деко:
-              геометричные элементы парадного фасада, светлые и просторные
-              помещения с пятиметровыми потолками
-            </p>
-            <p class="paragraph">
-              Влияние ар-деко быстро охватило Америку начала 19 века,
-              сформировало образ жизни того периода. Это время бурного
-              экономического роста, развитие технологий, машиностроения,
-              киноискусства и строительства культовых архитектурных сооружений
-            </p>
-          </div>
+        <div class="description__par--1 u-margin-largest-b">
+          <p class="paragraph u-paragraph-margin">
+            Вдохновением для дома послужила эстетика американского ар-деко:
+            геометричные элементы парадного фасада, светлые и просторные
+            помещения с пятиметровыми потолками
+          </p>
+          <p class="paragraph">
+            Влияние ар-деко быстро охватило Америку начала 19 века, сформировало
+            образ жизни того периода. Это время бурного экономического роста,
+            развитие технологий, машиностроения, киноискусства и строительства
+            культовых архитектурных сооружений
+          </p>
         </div>
 
-        <div class="description__wrapper">
-          <div class="head__wrapper">
-            <h2 class="heading-2 heading-2--bold u-margin-small-b">
-              ЦАО Пресненский район
-            </h2>
-            <h3 class="heading-3 u-heading-margin">ул. Климашкина, 16</h3>
-          </div>
+        <div class="head__wrapper">
+          <h2 class="heading-2 heading-2--bold u-margin-small-b">
+            ЦАО Пресненский район
+          </h2>
+          <h3 class="heading-3 u-heading-margin">ул. Климашкина, 16</h3>
         </div>
-        <div class="description__wrapper">
-          <div class="description__par description__par--narrow">
-            <p class="paragraph u-paragraph-margin">
-              Пресненский район считается одним из лучших в Москве: развитая
-              социальная инфраструктура, удобная транспортная доступность,
-              множество парков и прогулочных зон
-            </p>
-            <p class="paragraph">
-              Идеальное расположение в тихом переулке обеспечивает ощущение
-              клубности и приватности
-            </p>
-          </div>
-          <div class="description__par">
-            <p class="paragraph">
-              Москва-Сити, Центр международной торговли, известные театры,
-              музеи, лучшие рестораны - центр Москвы - центр притяжения успеха,
-              вдохновения и силы
-            </p>
-          </div>
+
+        <div class="description__par--2">
+          <p class="paragraph u-paragraph-margin">
+            Пресненский район считается одним из лучших в Москве: развитая
+            социальная инфраструктура, удобная транспортная доступность,
+            множество парков и прогулочных зон
+          </p>
+          <p class="paragraph">
+            Идеальное расположение в тихом переулке обеспечивает ощущение
+            клубности и приватности
+          </p>
+        </div>
+        <div class="description__par--3">
+          <p class="paragraph">
+            Москва-Сити, Центр международной торговли, известные театры, музеи,
+            лучшие рестораны - центр Москвы - центр притяжения успеха,
+            вдохновения и силы
+          </p>
         </div>
       </div>
+
       <div class="map">
         <iframe
           class="map__map"
@@ -97,55 +95,75 @@
           loading="lazy"
         ></iframe>
       </div>
+
       <div class="gallery">
         <h2 class="heading-2 heading-2--bold u-heading-margin">Преимущества</h2>
-        <div class="gallery__wrapper">
-          <figure class="gallery__wrapper--img">
-            <img src="/img/image 80.png" alt="Advantage image 1" />
-            <div class="gallery__wrapper--overlay"></div>
-            <figcaption class="gallery__caption heading-3">
-              Уникальная архитектура
-            </figcaption>
-          </figure>
-          <figure class="gallery__wrapper--img">
-            <img src="/img/image 81.jpg" alt="Advantage image 2" />
-            <div class="gallery__wrapper--overlay"></div>
+        <div class="gallery__mask__wrapper">
+          <div id="slider" class="gallery__wrapper">
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 80.png" alt="Advantage image 1" />
+              <div class="gallery__wrapper--overlay"></div>
+              <figcaption class="gallery__caption heading-3">
+                Уникальная архитектура
+              </figcaption>
+            </figure>
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 81.jpg" alt="Advantage image 2" />
+              <div class="gallery__wrapper--overlay"></div>
 
-            <figcaption class="gallery__caption heading-3">
-              Фитнес зона
-            </figcaption>
-          </figure>
-          <figure class="gallery__wrapper--img">
-            <img src="/img/image 82.jpg" alt="Advantage image 3" />
-            <div class="gallery__wrapper--overlay"></div>
+              <figcaption class="gallery__caption heading-3">
+                Фитнес зона
+              </figcaption>
+            </figure>
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 82.jpg" alt="Advantage image 3" />
+              <div class="gallery__wrapper--overlay"></div>
 
-            <figcaption class="gallery__caption heading-3">
-              Пентхаусы: 5м потолки
-            </figcaption>
-          </figure>
-          <figure class="gallery__wrapper--img">
-            <img src="/img/image 84.jpg" alt="Advantage image 4" />
-            <div class="gallery__wrapper--overlay"></div>
+              <figcaption class="gallery__caption heading-3">
+                Пентхаусы: 5м потолки
+              </figcaption>
+            </figure>
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 84.jpg" alt="Advantage image 4" />
+              <div class="gallery__wrapper--overlay"></div>
 
-            <figcaption class="gallery__caption heading-3">
-              Просторные террасы
-            </figcaption>
-          </figure>
+              <figcaption class="gallery__caption heading-3">
+                Просторные террасы
+              </figcaption>
+            </figure>
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 84.jpg" alt="Advantage image 4" />
+              <div class="gallery__wrapper--overlay"></div>
+
+              <figcaption class="gallery__caption heading-3">
+                Просторные террасы
+              </figcaption>
+            </figure>
+            <figure class="gallery__wrapper--img">
+              <img src="/img/image 84.jpg" alt="Advantage image 4" />
+              <div class="gallery__wrapper--overlay"></div>
+
+              <figcaption class="gallery__caption heading-3">
+                Просторные террасы
+              </figcaption>
+            </figure>
+          </div>
         </div>
         <div class="arr-buttons">
-          <svg xmlns="http://www.w3.org/2000/svg">
+          <svg id="left-arrow" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z"
             />
           </svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg">
+          <svg id="right-arrow" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
             />
           </svg>
         </div>
       </div>
+
       <div class="style">
         <div class="style__img">
           <img src="img/image 85.jpg" alt="Style image" />
@@ -167,43 +185,44 @@
           </p>
         </div>
       </div>
+
       <div class="apartments">
         <h2 class="heading-2 heading-2--bold u-heading-margin">
-          Семь этажей и 90 апартаментов
+          7 этажей <br />
+          90 апартаментов
         </h2>
-        <div class="apartments__content-wrapper">
-          <div class="apartments__content">
-            <div class="apartments__img u-margin-big-b">
-              <img src="img/image 87.jpg" alt="Apartments image 1" />
-            </div>
-            <h3 class="heading-3">Апартаменты</h3>
-            <p class="paragraph u-margin-big-b u-margin-medium-t">
-              Со второго по шестой этаж расположены апартаменты различной
-              площади от 35 до 80 м2, жителям которых получат максимальную
-              приватность и комфорт
-            </p>
-            <button class="btn btn--white">Посмотреть планировки</button>
-            <p class="paragraph u-margin-medium-t">
-              <a class="apartments__link" href="#">Запросить стоимость</a>
-            </p>
+        <div class="apartments__content--1">
+          <div class="apartments__img u-margin-big-b">
+            <img src="img/image 87.jpg" alt="Apartments image 1" />
           </div>
-          <div class="apartments__content">
-            <div class="apartments__img u-margin-big-b">
-              <img src="img/image 88.jpg" alt="Apartments image 2" />
-            </div>
-            <h3 class="heading-3">Пентхаусы</h3>
-            <p class="paragraph u-margin-big-b u-margin-medium-t">
-              На седьмом этаже Дома предусмотрено несколько пентхаусов. В
-              распоряжении жителей: высокие полотки 5,5 метров, свободная
-              планировка для создания стильного интерьера
-            </p>
-            <button class="btn btn--white">Посмотреть планировки</button>
-            <p class="paragraph u-margin-medium-t">
-              <a class="apartments__link" href="#">Запросить стоимость</a>
-            </p>
+          <h3 class="heading-3">Апартаменты</h3>
+          <p class="paragraph u-margin-big-b u-margin-medium-t">
+            Со второго по шестой этаж расположены апартаменты различной площади
+            от 35 до 80 м2, жителям которых получат максимальную приватность и
+            комфорт
+          </p>
+          <button class="btn btn--white">Посмотреть планировки</button>
+          <p class="paragraph u-margin-medium-t">
+            <a class="apartments__link" href="#">Запросить стоимость</a>
+          </p>
+        </div>
+        <div class="apartments__content--2">
+          <div class="apartments__img u-margin-big-b">
+            <img src="img/image 88.jpg" alt="Apartments image 2" />
           </div>
+          <h3 class="heading-3">Пентхаусы</h3>
+          <p class="paragraph u-margin-big-b u-margin-medium-t">
+            На седьмом этаже Дома предусмотрено несколько пентхаусов. В
+            распоряжении жителей: высокие полотки 5,5 метров, свободная
+            планировка для создания стильного интерьера
+          </p>
+          <button class="btn btn--white">Посмотреть планировки</button>
+          <p class="paragraph u-margin-medium-t">
+            <a class="apartments__link" href="#">Запросить стоимость</a>
+          </p>
         </div>
       </div>
+
       <div class="comfort-zone">
         <div class="comfort-zone__text">
           <h2 class="heading-2 heading-2--bold u-heading-margin">
@@ -228,9 +247,10 @@
           </p>
         </div>
         <div class="comfort-zone__img">
-          <img src="img/image 89.png" alt="Comfort-zone image 1" />
+          <img src="img/image 89.jpg" alt="Comfort-zone image 1" />
         </div>
       </div>
+
       <div class="characteristics">
         <h2 class="heading-2 heading-2--bold u-heading-margin">
           Характеристики
@@ -290,6 +310,7 @@
           </div>
         </div>
       </div>
+
       <form action="" class="form">
         <div class="form__wrapper">
           <h2 class="heading-2 u-heading-margin">Записаться на просмотр</h2>
@@ -313,27 +334,25 @@
           <h2 class="heading-2">Exility</h2>
           <p class="footer__copy">Exility 2021 © Все права защищены</p>
         </div>
-        <div class="footer__nav__wrapper">
-          <div class="footer__nav nav__item">
-            <p><a class="footer__nav__link" href="">О проекте</a></p>
-            <p>
-              <a class="footer__nav__link" href="">Посмотреть планировки</a>
-            </p>
-            <p><a class="footer__nav__link" href="">Предложения</a></p>
-            <p><a class="footer__nav__link" href="">Отправить заявку</a></p>
-            <p><a class="footer__nav__link" href="">Контакты</a></p>
-          </div>
-          <div class="footer__contacts nav__item">
-            <h3 class="heading-3">
-              <a class="footer__nav__link" href="tel:+78001549247"
-                >+7 800 154 92 47</a
-              >
-            </h3>
-            <p class="u-margin-small-b">
-              Москва, Пресненский район, ул. Климашкина 16
-            </p>
-            <p>Пн - Вс: с 9:00 до 18:00</p>
-          </div>
+        <div class="footer__nav nav__item">
+          <p><a class="footer__nav__link" href="">О проекте</a></p>
+          <p>
+            <a class="footer__nav__link" href="">Посмотреть планировки</a>
+          </p>
+          <p><a class="footer__nav__link" href="">Предложения</a></p>
+          <p><a class="footer__nav__link" href="">Отправить заявку</a></p>
+          <p><a class="footer__nav__link" href="">Контакты</a></p>
+        </div>
+        <div class="footer__contacts nav__item">
+          <h3 class="heading-3">
+            <a class="footer__nav__link" href="tel:+78001549247"
+              >+7 800 154 92 47</a
+            >
+          </h3>
+          <p class="u-margin-small-b">
+            Москва, Пресненский район,</br> ул. Климашкина 16
+          </p>
+          <p>Пн - Вс: с 9:00 до 18:00</p>
         </div>
       </footer>
     </div>

@@ -1,17 +1,21 @@
 .style {
-  display: flex;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: $inner-grid-columns-template-fullwidth;
   align-items: center;
-  padding-right: 20rem;
-  justify-content: space-between;
 
   &__img {
-    margin-right: 8rem;
+    grid-column: content-inner-ls/content-inner-le;
+    height: 60rem;
     img {
+      height: 100%;
       width: 100%;
+      object-fit: cover;
     }
   }
 
   &__text {
-    max-width: 60rem;
+    grid-column: spacing-inner-rs/middle-inner-r;
   }
 }

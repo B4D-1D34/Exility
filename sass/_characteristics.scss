@@ -1,5 +1,7 @@
 .characteristics {
-  padding: 20rem;
+  grid-column: content-left-start / content-right-end;
+  padding: $padding-global 0;
+
   &__grid {
     display: grid;
     column-gap: 9rem;

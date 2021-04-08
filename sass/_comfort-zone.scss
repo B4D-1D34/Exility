@@ -1,17 +1,21 @@
 .comfort-zone {
-  padding-left: 20rem;
-  display: flex;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: $inner-grid-columns-template-fullwidth;
   align-items: center;
-  justify-content: space-between;
 
   &__img {
-    margin-left: 8rem;
+    grid-column: content-inner-rs/content-inner-re;
+    height: 60rem;
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   &__text {
-    max-width: 60rem;
+    grid-column: middle-inner-l/spacing-inner-le;
   }
 }

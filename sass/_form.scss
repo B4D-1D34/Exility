@@ -1,4 +1,6 @@
 .form {
+  grid-column: full-start / full-end;
+
   padding: 10rem 0 8rem;
   background-color: $color-grey-dark;
   &__wrapper {

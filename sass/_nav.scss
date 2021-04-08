@@ -1,9 +1,11 @@
 .nav {
+  grid-column: content-left-start / content-right-end;
+
   display: grid;
   grid-template-columns: repeat(2, minmax(37rem, max-content));
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 20rem;
+  padding: 2rem 0;
 
   &__wrapper {
     display: grid;
