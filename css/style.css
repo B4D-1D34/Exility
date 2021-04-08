@@ -207,8 +207,6 @@ textarea {
 .gallery {
   grid-column: content-left-start / full-end;
   padding: 20rem 0; }
-  .gallery__out {
-    grid-column: full-start / full-end; }
   .gallery__mask__wrapper {
     width: 100%; }
   .gallery__wrapper {
