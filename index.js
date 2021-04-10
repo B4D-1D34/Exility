@@ -3,12 +3,14 @@ const rightArrow = document.getElementById("right-arrow");
 const sliderWrapper = document.getElementById("slider");
 
 const getCardItemDimensions = () => {
+  const grid = document.getElementsByClassName("gallery__wrapper")[0];
   const advantagesItem = document.getElementsByClassName(
     "gallery__wrapper--img"
   )[0];
   const advantagesItemStyles = window.getComputedStyle(advantagesItem);
+  const advantagesGridStyles = window.getComputedStyle(grid);
   const itemOffset =
-    Number(advantagesItemStyles.marginRight.replace(/[^-\d.]/g, "")) +
+    Number(advantagesGridStyles.columnGap.replace(/[^-\d.]/g, "")) +
     Number(advantagesItemStyles.width.replace(/[^-\d.]/g, ""));
 
   return itemOffset;

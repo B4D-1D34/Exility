@@ -6,8 +6,6 @@
   grid-template-columns: $inner-grid-columns-template;
 
   &__content {
-    width: min-content;
-
     &--1 {
       grid-column: content-inner-ls/content-inner-le;
     }
@@ -18,7 +16,6 @@
   }
 
   &__img {
-    width: 52rem;
     height: 60rem;
 
     img {

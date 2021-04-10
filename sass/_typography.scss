@@ -6,6 +6,10 @@
     font-weight: 400;
     color: $color-white;
     text-transform: uppercase;
+    @include respond(phone) {
+      font-size: 5.6rem;
+      line-height: 6.7rem;
+    }
   }
 
   &-2 {
@@ -15,11 +19,20 @@
     color: $color-black;
     line-height: 120%;
     letter-spacing: 0.1rem;
+    @include respond(tab) {
+      font-size: 3rem;
+    }
 
     &--light {
       text-transform: none;
       color: $color-white;
       font-weight: 200;
+      @include respond(tab) {
+        font-size: 4rem;
+      }
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
 
     &--bold {
@@ -33,6 +46,9 @@
     font-size: 2.8rem;
     color: $color-text;
     line-height: 125%;
+    @include respond(tab) {
+      font-size: 2.2rem;
+    }
   }
 }
 .paragraph,
@@ -45,5 +61,11 @@ textarea {
 
   &--bold {
     font-weight: 700;
+  }
+}
+
+.paragraph {
+  @include respond(tab) {
+    font-size: 1.6rem;
   }
 }

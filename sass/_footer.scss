@@ -28,6 +28,10 @@
     }
   }
 
+  &__phone {
+    font-size: 2.8rem;
+  }
+
   &__contacts {
     grid-column: content-inner-rs/middle-inner-r;
     justify-self: flex-end;
