@@ -6,15 +6,30 @@
   @include respond(tab) {
     grid-template-columns: $inner-grid-columns-template-fullwidth-tab;
   }
+  @include respond(phone) {
+    grid-template-columns: $inner-grid-columns-template-phone-fullwidth;
+  }
   padding: 6rem 0 4rem;
   background-color: $color-text;
-
   color: $color-white;
 
   &__copy {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 120%;
+    grid-column: middle-inner-l/content-inner-le;
+    grid-row: 2/3;
+    @include respond(tab) {
+      grid-column: content-inner-rs/middle-inner-r;
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+    @include respond(phone) {
+      grid-row: 4/5;
+      grid-column: content-inner-ls/content-inner-le;
+      justify-self: unset;
+      display: flex;
+    }
   }
 
   &__nav {
@@ -24,6 +39,19 @@
 
     column-gap: 6rem;
     row-gap: 2rem;
+    @include respond(notebook) {
+      column-gap: 4rem;
+    }
+    @include respond(tab) {
+      grid-column: middle-inner-l/content-inner-le;
+    }
+    @include respond(phone) {
+      grid-template-columns: max-content;
+
+      margin-bottom: 6rem;
+      grid-row: 2/3;
+      grid-column: content-inner-ls/content-inner-le;
+    }
 
     &__link {
       text-decoration: none;
@@ -38,13 +66,29 @@
   &__contacts {
     grid-column: content-inner-rs/middle-inner-r;
     justify-self: flex-end;
+    margin-bottom: 3.1rem;
+
+    @include respond(tab) {
+      margin-bottom: 6rem;
+    }
+    @include respond(phone) {
+      grid-row: 1/2;
+      grid-column: content-inner-ls/content-inner-le;
+      justify-self: unset;
+    }
   }
 
-  &__heading__wrapper {
+  .heading-2 {
     grid-column: middle-inner-l/content-inner-le;
-    height: 18.9rem;
-    display: grid;
-    align-content: space-between;
+    @include respond(tab) {
+      grid-row: 2/3;
+    }
+    @include respond(phone) {
+      grid-row: 3/4;
+      grid-column: content-inner-ls/content-inner-le;
+      display: block;
+      margin-bottom: 1rem;
+    }
   }
 
   .heading-2,

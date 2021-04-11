@@ -9,6 +9,9 @@
   @include respond(tab) {
     height: 55rem;
   }
+  @include respond(phone) {
+    height: 43.8rem;
+  }
   background-image: url(/img/image781.jpg);
   background-size: cover;
   background-position: center;
@@ -27,6 +30,7 @@
 
   .btn {
     visibility: hidden;
+    font-size: 2rem;
     padding: 2rem 7rem;
     border-color: $color-white;
     &:hover {
