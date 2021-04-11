@@ -1,17 +1,39 @@
 .header {
   grid-column: full-start / full-end;
-  display: grid;
 
-  justify-items: center;
-  align-content: center;
-  grid-row-gap: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   height: 79rem;
+  @include respond(tab) {
+    height: 55rem;
+  }
   background-image: url(/img/image781.jpg);
   background-size: cover;
+  background-position: center;
 
   .heading-2 {
     width: 55rem;
+    @include respond(tab) {
+      margin-bottom: 10rem;
+    }
+    @include respond(phone) {
+      width: 30rem;
+      margin-bottom: 8rem;
+    }
     text-align: center;
+  }
+
+  .btn {
+    visibility: hidden;
+    padding: 2rem 7rem;
+    @include respond(tab) {
+      visibility: visible;
+    }
+    @include respond(phone) {
+      width: $column-tab;
+      padding: 1.5rem 0;
+    }
   }
 }

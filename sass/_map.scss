@@ -1,9 +1,9 @@
 .map {
   grid-column: full-start / full-end;
-
-  // display: none;
-
   &__map {
     width: 100%;
+    @include respond(tab) {
+      height: 40rem;
+    }
   }
 }

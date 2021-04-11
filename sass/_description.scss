@@ -3,15 +3,33 @@
 
   display: grid;
   grid-template-columns: $inner-grid-columns-template;
+  @include respond(tab) {
+    grid-template-columns: $inner-grid-columns-template-tab;
+  }
   padding: $padding-global 0 10rem;
+  @include respond(notebook) {
+    padding: $padding-global-notebook 0 6rem;
+  }
+  @include respond(tab) {
+    padding: $padding-global-tab 0 6rem;
+  }
+  @include respond(phone) {
+    padding: $padding-global-phone 0 6rem;
+  }
 
   .head__wrapper {
-    grid-column: content-inner-ls / content-inner-re;
+    grid-column: content-inner-ls / content-inner-le;
+    @include respond(tab) {
+      grid-column: content-inner-ls / content-inner-re;
+    }
   }
 
   &__par {
     &--1 {
       grid-column: spacing-inner-rs / content-inner-re;
+      @include respond(tab) {
+        grid-column: content-inner-rs / content-inner-re;
+      }
     }
 
     &--2 {
@@ -20,6 +38,9 @@
 
     &--3 {
       grid-column: spacing-inner-rs / content-inner-re;
+      @include respond(tab) {
+        grid-column: content-inner-rs / content-inner-re;
+      }
     }
   }
 }

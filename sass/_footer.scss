@@ -3,6 +3,9 @@
 
   display: grid;
   grid-template-columns: $inner-grid-columns-template-fullwidth;
+  @include respond(tab) {
+    grid-template-columns: $inner-grid-columns-template-fullwidth-tab;
+  }
   padding: 6rem 0 4rem;
   background-color: $color-text;
 

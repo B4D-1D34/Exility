@@ -3,6 +3,9 @@
 
   display: grid;
   grid-template-columns: $inner-grid-columns-template-fullwidth;
+  @include respond(tab) {
+    grid-template-columns: $inner-grid-columns-template-fullwidth-tab;
+  }
   align-items: center;
 
   &__img {
@@ -17,5 +20,8 @@
 
   &__text {
     grid-column: spacing-inner-rs/middle-inner-r;
+    @include respond(tab) {
+      grid-column: content-inner-rs/middle-inner-r;
+    }
   }
 }

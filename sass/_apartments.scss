@@ -1,9 +1,20 @@
 .apartments {
   grid-column: content-left-start / content-right-end;
   padding: $padding-global 0;
-
+  @include respond(notebook) {
+    padding: $padding-global-notebook 0;
+  }
+  @include respond(tab) {
+    padding: $padding-global-tab 0;
+  }
+  @include respond(phone) {
+    padding: $padding-global-phone 0;
+  }
   display: grid;
   grid-template-columns: $inner-grid-columns-template;
+  @include respond(tab) {
+    grid-template-columns: $inner-grid-columns-template-tab;
+  }
 
   &__content {
     &--1 {
@@ -17,6 +28,9 @@
 
   &__img {
     height: 60rem;
+    @include respond(tab) {
+      height: 38rem;
+    }
 
     img {
       width: 100%;

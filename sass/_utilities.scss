@@ -1,5 +1,11 @@
 .u-heading-margin {
   margin-bottom: 8rem;
+  @include respond(notebook) {
+    margin-bottom: 6rem;
+  }
+  @include respond(tab) {
+    margin-bottom: 4rem;
+  }
 }
 
 .u-paragraph-margin {
@@ -16,8 +22,14 @@
 
 .u-margin-big-b {
   margin-bottom: 4rem;
+  @include respond(tab) {
+    margin-bottom: 2rem;
+  }
 }
 
 .u-margin-largest-b {
   margin-bottom: $padding-global;
+  @include respond(tab) {
+    margin-bottom: $padding-global-tab;
+  }
 }

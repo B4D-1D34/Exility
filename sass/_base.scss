@@ -13,13 +13,20 @@ $color-text: #222222;
 $color-grey-dark: #333333;
 $color-grey-light: #bdbdbd;
 $color-grey-medium: #707070;
+$color-grey-another: #e7e7e7;
 
 // PADDING
 $padding-global: 20rem;
+$padding-global-notebook: 16rem;
+$padding-global-tab: 12rem;
+$padding-global-phone: 10rem;
 
 // GRID
 $column: minmax(40rem, 52rem); //global column size
+$column-tab: 28rem; //less width devices size
 $spacing: 8rem; //global spacing size
+$spacing-tab: 4rem; //less width devices size
+
 //inner grid template, subgrid with lines placement equal to parent grid
 $inner-grid-columns-template: [content-inner-ls] $column [content-inner-le
   spacing-inner-ls] $spacing [spacing-inner-le spacing-inner-rs] $spacing
@@ -30,6 +37,16 @@ $inner-grid-columns-template-fullwidth: [content-inner-ls] minmax(2rem, 1fr)
   [spacing-inner-le spacing-inner-rs] $spacing [spacing-inner-re
   content-inner-rs] $column [middle-inner-r] minmax(2rem, 1fr)
   [content-inner-re];
+
+//different grid for less width devices
+$inner-grid-columns-template-tab: [content-inner-ls] $column-tab
+  [content-inner-le spacing-inner-rs] $spacing-tab [spacing-inner-re
+  content-inner-rs] $column-tab [content-inner-re];
+
+$inner-grid-columns-template-fullwidth-tab: [content-inner-ls] minmax(2rem, 1fr)
+  [middle-inner-l] $column-tab [content-inner-le spacing-inner-rs] $spacing-tab
+  [spacing-inner-re content-inner-rs] $column-tab [middle-inner-r]
+  minmax(2rem, 1fr) [content-inner-re];
 
 @font-face {
   font-family: "SF Pro Display";
@@ -85,6 +102,15 @@ textarea {
     [content-right-start] $column [content-right-end] minmax(2rem, 1fr)
     [full-end];
   overflow: hidden;
+
+  @include respond(tab) {
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr)
+      [content-left-start] $column-tab [content-left-end
+      middle-spacing-start] $spacing-tab [middle-spacing-end
+      content-right-start] $column-tab [content-right-end] minmax(2rem, 1fr)
+      [full-end];
+  }
 }
 
 .btn {
@@ -104,12 +130,14 @@ textarea {
     outline: none;
   }
   &--black {
-    background-color: $color-grey-dark;
+    // background-color: $color-grey-dark;
+    background-color: $color-black;
     color: $color-white;
 
     &:hover {
-      background-color: $color-black;
-      border-color: $color-black;
+      background-color: $color-grey-another;
+      color: $color-text;
+      border-color: $color-grey-another;
     }
   }
 

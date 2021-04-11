@@ -1,11 +1,31 @@
 .characteristics {
   grid-column: content-left-start / content-right-end;
   padding: $padding-global 0;
+  @include respond(notebook) {
+    padding: $padding-global-notebook 0;
+  }
+  @include respond(tab) {
+    padding: $padding-global-tab 0;
+  }
+  @include respond(phone) {
+    padding: $padding-global-phone 0;
+  }
 
   &__grid {
     display: grid;
     column-gap: 9rem;
     row-gap: 6rem;
     grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    @include respond(notebook) {
+      grid-template-columns: repeat(auto-fit, minmax(48rem, 1fr));
+      column-gap: 0;
+    }
+    @include respond(tab) {
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      column-gap: 4rem;
+    }
+    @include respond(phone) {
+      grid-template-columns: minmax(28rem, 1fr);
+    }
   }
 }

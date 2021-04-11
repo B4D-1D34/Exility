@@ -12,4 +12,10 @@
       @content;
     }
   }
+  //1440px
+  @if $breakpoint == notebook {
+    @media (max-width: 90em) {
+      @content;
+    }
+  }
 }
