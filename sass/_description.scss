@@ -6,6 +6,10 @@
   @include respond(tab) {
     grid-template-columns: $inner-grid-columns-template-tab;
   }
+  @include respond(phone) {
+    grid-template-columns: $inner-grid-columns-template-phone;
+  }
+
   padding: $padding-global 0 10rem;
   @include respond(notebook) {
     padding: $padding-global-notebook 0 6rem;
@@ -22,6 +26,9 @@
     @include respond(tab) {
       grid-column: content-inner-ls / content-inner-re;
     }
+    @include respond(phone) {
+      grid-column: content-inner-ls / content-inner-le;
+    }
   }
 
   &__par {
@@ -29,6 +36,9 @@
       grid-column: spacing-inner-rs / content-inner-re;
       @include respond(tab) {
         grid-column: content-inner-rs / content-inner-re;
+      }
+      @include respond(phone) {
+        grid-column: content-inner-ls / content-inner-le;
       }
     }
 
@@ -40,6 +50,10 @@
       grid-column: spacing-inner-rs / content-inner-re;
       @include respond(tab) {
         grid-column: content-inner-rs / content-inner-re;
+      }
+      @include respond(phone) {
+        grid-column: content-inner-ls / content-inner-le;
+        margin-top: 2rem;
       }
     }
   }

@@ -28,6 +28,10 @@
   .btn {
     visibility: hidden;
     padding: 2rem 7rem;
+    border-color: $color-white;
+    &:hover {
+      border-color: $color-grey-dark;
+    }
     @include respond(tab) {
       visibility: visible;
     }

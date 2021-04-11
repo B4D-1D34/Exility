@@ -32,4 +32,7 @@
   @include respond(tab) {
     margin-bottom: $padding-global-tab;
   }
+  @include respond(phone) {
+    margin-bottom: $padding-global-phone;
+  }
 }

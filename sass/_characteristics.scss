@@ -26,6 +26,10 @@
     }
     @include respond(phone) {
       grid-template-columns: minmax(28rem, 1fr);
+      row-gap: 2rem;
+      .u-margin-medium-t {
+        margin-top: 1rem;
+      }
     }
   }
 }

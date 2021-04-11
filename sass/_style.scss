@@ -1,16 +1,25 @@
 .style {
   grid-column: full-start / full-end;
+  @include respond(phone) {
+    grid-column: content-left-start / content-right-end;
+  }
 
   display: grid;
   grid-template-columns: $inner-grid-columns-template-fullwidth;
   @include respond(tab) {
     grid-template-columns: $inner-grid-columns-template-fullwidth-tab;
   }
+  @include respond(phone) {
+    grid-template-columns: $inner-grid-columns-template-phone;
+  }
   align-items: center;
 
   &__img {
     grid-column: content-inner-ls/content-inner-le;
     height: 60rem;
+    @include respond(phone) {
+      height: 40rem;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -22,6 +31,11 @@
     grid-column: spacing-inner-rs/middle-inner-r;
     @include respond(tab) {
       grid-column: content-inner-rs/middle-inner-r;
+    }
+    @include respond(phone) {
+      grid-column: content-inner-ls/content-inner-le;
+      grid-row: 1/2;
+      margin-bottom: 4rem;
     }
   }
 }

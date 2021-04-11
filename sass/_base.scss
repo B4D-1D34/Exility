@@ -48,6 +48,10 @@ $inner-grid-columns-template-fullwidth-tab: [content-inner-ls] minmax(2rem, 1fr)
   [spacing-inner-re content-inner-rs] $column-tab [middle-inner-r]
   minmax(2rem, 1fr) [content-inner-re];
 
+$inner-grid-columns-template-phone: [content-inner-ls] $column-tab
+  [content-inner-le];
+$inner-grid-columns-template-phone-fullwidth: minmax(2rem, 1fr)
+  [content-inner-ls] $column-tab [content-inner-le] minmax(2rem, 1fr);
 @font-face {
   font-family: "SF Pro Display";
   src: url("/fonts/SFProDisplay-Light.woff");
@@ -109,6 +113,13 @@ textarea {
       [content-left-start] $column-tab [content-left-end
       middle-spacing-start] $spacing-tab [middle-spacing-end
       content-right-start] $column-tab [content-right-end] minmax(2rem, 1fr)
+      [full-end];
+  }
+  @include respond(phone) {
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr)
+      [content-left-start] $column-tab [content-right-end]
+      minmax(2rem, 1fr)
       [full-end];
   }
 }

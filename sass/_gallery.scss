@@ -59,6 +59,10 @@
     position: absolute;
     bottom: 3rem;
     left: 3rem;
+    @include respond(tab) {
+      bottom: 2rem;
+      left: 2rem;
+    }
     color: $color-white;
   }
 }

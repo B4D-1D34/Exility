@@ -1,5 +1,8 @@
 .comfort-zone {
   grid-column: full-start / full-end;
+  @include respond(phone) {
+    grid-column: content-left-start / content-right-end;
+  }
 
   display: grid;
   grid-template-columns: $inner-grid-columns-template-fullwidth;
@@ -7,10 +10,17 @@
   @include respond(tab) {
     grid-template-columns: $inner-grid-columns-template-fullwidth-tab;
   }
+  @include respond(phone) {
+    grid-template-columns: $inner-grid-columns-template-phone;
+  }
 
   &__img {
     grid-column: content-inner-rs/content-inner-re;
     height: 60rem;
+    @include respond(phone) {
+      grid-column: content-inner-ls/content-inner-le;
+      height: 40rem;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -20,5 +30,9 @@
 
   &__text {
     grid-column: middle-inner-l/content-inner-le;
+    @include respond(phone) {
+      grid-column: content-inner-ls/content-inner-le;
+      margin-bottom: 4rem;
+    }
   }
 }
