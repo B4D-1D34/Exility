@@ -363,7 +363,9 @@ textarea {
     padding: 2rem 7rem;
     border-color: #fff; }
     .header .btn:hover {
-      border-color: #333333; }
+      border-color: #bdbdbd;
+      background-color: #bdbdbd;
+      color: #222222; }
     @media only screen and (max-width: 62.5em) {
       .header .btn {
         visibility: visible; } }

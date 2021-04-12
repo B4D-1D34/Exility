@@ -34,7 +34,9 @@
     padding: 2rem 7rem;
     border-color: $color-white;
     &:hover {
-      border-color: $color-grey-dark;
+      border-color: $color-grey-light;
+      background-color: $color-grey-light;
+      color: $color-text;
     }
     @include respond(tab) {
       visibility: visible;

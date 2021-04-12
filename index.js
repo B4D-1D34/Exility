@@ -6,7 +6,9 @@ const burger = document.getElementById("menu");
 burger.addEventListener("change", () => {
   if (burger.checked) {
     document.body.style.overflow = "hidden";
-  } else document.body.style.overflow = "auto";
+    return;
+  }
+  document.body.style.overflow = "auto";
 });
 
 const getCardItemDimensions = () => {
