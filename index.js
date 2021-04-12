@@ -1,6 +1,13 @@
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 const sliderWrapper = document.getElementById("slider");
+const burger = document.getElementById("menu");
+
+burger.addEventListener("change", () => {
+  if (burger.checked) {
+    document.body.style.overflow = "hidden";
+  } else document.body.style.overflow = "auto";
+});
 
 const getCardItemDimensions = () => {
   const grid = document.getElementsByClassName("gallery__wrapper")[0];
